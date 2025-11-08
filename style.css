@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+  line-height: 1.2;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero h1,
+.footer h1 {
+  width: 45%;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #0f0f0f;
+}
+
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.footer-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.footer-content * {
+  pointer-events: auto;
+}
+
+.object-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.object {
+  position: absolute;
+  width: max-content;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #fff;
+  color: #0f0f0f;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  cursor: grab;
+  user-select: none;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.object.olga {
+  background-color: #ffdc5e;
+}
+
+.object.evgen {
+  background-color: #79b5ff;
+}
+
+.object:active {
+  cursor: grabbing;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero h1,
+  .footer h1 {
+    width: 100%;
+  }
+
+  .object {
+    font-size: 1rem;
+  }
+}
