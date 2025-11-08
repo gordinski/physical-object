@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Matter.World.add(engine.world, walls);
 
     // --- bodies
-    container.querySelectorAll(".object").forEach((el, i) => {
+    container.querySelectorAll(".object").forEach((el) => {
       const r = el.getBoundingClientRect();
       const startX = Math.random() * (W - r.width) + r.width / 2;
       const startY = -150 - Math.random() * 200;
